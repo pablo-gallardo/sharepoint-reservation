@@ -1,5 +1,8 @@
+import { url } from ".\url.js";
+
+// where the magic happens
+// this will create the reservation
 function createReservation(obj){
-    const url = "https://myconnect.gsk.com/sites/supportsite1";
     let submitReserva = document.getElementById("submitReserva")
     submitReserva.setAttribute("onclick", "return false")
     submitReserva = document.getElementById("submitReserva")

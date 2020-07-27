@@ -1,3 +1,5 @@
+import { url } from ".\url.js";
+// get the available spaces on the selected site and table
 function getSpace(table, phase, date){
     let respSpaceReservaTitle = []
     let tableChosen = table

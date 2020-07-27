@@ -1,3 +1,5 @@
+import { url } from ".\url.js";
+// get the selected tables on the desired site
 function getTable(fase){
     let enlace = `${url}/_api/web/lists/GetByTitle('${fase}')/items?$select=table`
     let tableArray = []

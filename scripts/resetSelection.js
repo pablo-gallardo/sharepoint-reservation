@@ -1,3 +1,5 @@
+// each time the user selects a new site or space, this function is used to
+// delete the already existing options on the dropdowns
 function resetSelect(object){
     let max = object.options.length
     console.log(max)
