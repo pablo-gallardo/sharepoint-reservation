@@ -8,7 +8,7 @@ each calendar should be named "[Site] Calendar" and each list "[Site]". Add two 
 
 Add all the spaces and tables accordingly to your lists (this can be easily be done using the Sharepoint PnP module) and you should be good to go.
 
-This reservation app sworks dinamically, in such that if a space is taked already on the specified date, it will not be listed as an option to the users.
+This reservation app works dinamically, in such that if a space is taked already on the specified date, it will not be listed as an option to the users.
 
 Work flow as follow:
 
