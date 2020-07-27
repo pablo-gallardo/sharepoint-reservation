@@ -1,0 +1,42 @@
+<script src="scripts\eventDropdownHandler.js">
+
+</script>
+
+<h1>Reserva</h1>
+<br>
+<p id="pSelect" hidden>
+    <label for = "fase">Escoja la fase</label>
+    <select onchange="eventDropdownHandler(this.value)" id="fase" class = "selFase">
+        <option value="Choose" selected="selected" class = "selFase">Choose</option>
+        <option value="F1" class = "selFase">Fase 1</option>
+        <option value="F2" class = "selFase">Fase 2</option>
+        <option value="F3" class = "selFase">Fase 3</option>
+        <option value="F4" class = "selFase">Fase 4</option>
+    </select>
+
+    <label for = "mesa" id = "lMesa" class = "selMesa">Escoja la mesa</label>
+    <select onchange="eventDropdownHandler(this.value)" id = "mesa" class = "selMesa">
+        <option value="Choose" selected="selected">Choose</option>
+    </select>
+
+    <label for = "campo" id = "lCampo">Escoja el campo</label>
+    <select onchange="eventDropdownHandler(this.value)" id = "campo">
+    <option value="Choose" selected="selected">Choose</option>
+    </select> <br><br>
+</p>
+<form></form>
+<form id="formReserva" hidden>
+  <label for="fname">Nombre completo</label><br>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="fmudid">MUDID</label><br>
+  <input type="text" id="fmudid" name="fmudid"><br><br>
+  <input type="submit" id= "submitReserva" value= "Submit" onclick="createReservation(selectionObj)">
+</form>
+<form id = "dateForm">
+<label for="date">Fecha de reserva:</label><br>
+ <input type="date" id="dateReserva" name="date" onchange="getDate(this.value, selectionObj)" onkeypress="return false">
+</form>
+<br><br>
+<picture>
+  <img id = "testPic" src= "" style="width:auto;">
+</picture>
