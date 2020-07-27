@@ -3,7 +3,10 @@ import { getSpace } from ".\getSpace.js";
 import { getDate } from ".\getDate.js";
 import { resetSelection } from ".\resetSelection.js";
 import { createReservation } from ".\createReservation.js";
+import { url } from ".\url.js";
 
+// object holding the selections from the user, this will be the
+// json body for the reservation
 let selectionObj = {
     "Fase": "",
     "Mesa": "",
@@ -11,6 +14,7 @@ let selectionObj = {
     "Fecha": ""
 };
 
+// event handler for the forms and dropdowns
 function eventDropdownHandler(sel){
     let selFase = document.getElementById("fase");
     let selMesa= document.getElementById("mesa");
